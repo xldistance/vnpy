@@ -80,7 +80,7 @@ class CtaEngine(object):
         # 引擎类型为实盘
         self.engineType = ENGINETYPE_TRADING
         
-        # 注册日式事件类型
+        # 注册日志事件类型
         self.mainEngine.registerLogEvent(EVENT_CTA_LOG)
         
         # 注册事件监听
