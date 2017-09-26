@@ -716,7 +716,7 @@ class PositionDetail(object):
         """发单更新"""
         # 基于请求生成委托对象
         order = VtOrderData()
-        order.vtSymbol = req.vtSymbol
+        order.vtSymbol = req.symbol
         order.symbol = req.symbol
         order.exchange = req.exchange
         order.offset = req.offset
