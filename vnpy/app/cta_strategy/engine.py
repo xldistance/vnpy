@@ -157,7 +157,7 @@ class CtaEngine(BaseEngine):
         self.check_stop_order(tick)
 
         for strategy in strategies:
-            if strategy.inited:
+            if strategy.trading:
                 self.call_strategy_func(strategy, strategy.on_tick, tick)
 
     def process_order_event(self, event: Event):
